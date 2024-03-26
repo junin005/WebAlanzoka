@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <hr />
+    <form action="" method="post">
+        <fieldset>
+            <legend> Dados Pessoais </legend>
+            <label>Nome Completo: </label>
+            <Input type="text" name="nome" id="nome" required placeholder="Nome">
+            <label>E-mail:</label>
+            <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="**********"> <br/>
+            <label for="Sexo">Sexo:</label>
+            <input type="radio" name="sexo" id="sexo" checked> Masculino
+            <input type="radio" name="sexo" id="sexo"> Feminino
+        </fieldset>
+        <fieldset>
+            <legend> Endereço </legend>
+            <label for="CEP">CEP:</label>
+            <input type="number" name="CEP" id="CEP" placeholder="12345-123">
+            <label for="Logradouro">Logradouro:</label>
+            <input type="text" name="Logradouro" id="Logradouro" placeholder="Rua...">
+            <label for="Numero">Número:</label>
+            <input type="number" name="Numero" id="Numero" placeholder="69"><br/>
+            <label for="complemento">Complemento:</label>
+            <input type="text" name="complemento" id="complemento" placeholder="Apto, Bloco, etc..">
+        </fieldset>
+        <fieldset>
+            <Legend>Dados Financeiros</Legend>
+            <label for="tipo">Tipo:</label>
+            <input type="radio" name="tipo" id="tipo">Nacional
+            <input type="radio" name="tipo" id="tipo" checked>Internacional
+            <label for="bandeira">Bandeira:</label>
+            <select name="" id="">
+                <option value="MasterCard">MasterCard</option>
+                <option value="Visa">Visa</option>
+                <option value="Elo">Elo</option>
+            </select>
+            <label for="">Número do Cartão:</label>
+            <input type="number" name="numCartao" id="numCartao" placeholder="1234567891234567"><br/>
+            <label for="">Validade:</label>
+            <input type="month" name="data" id="data">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
