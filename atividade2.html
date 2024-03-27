@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Formulário</h2>
+    <hr />
+    <form action="" method="post">
+        <fieldset>
+            <legend>Estado do veículo:</legend>
+            <input type="radio" name="tipo" id="tipo" required> Novo
+            <input type="radio" name="tipo" id="tipo" required> Usado
+        </fieldset>
+        <fieldset>
+            <legend>Categoria do veículo:</legend>
+            <input type="radio" name="Categoria" id="Categoria" required> Hatch
+            <input type="radio" name="Categoria" id="Categoria" required> SUV
+            <input type="radio" name="Categoria" id="Categoria" required> Sedã
+            <input type="radio" name="Categoria" id="Categoria" required> Picape
+            <input type="radio" name="Categoria" id="Categoria" required> Utilitário
+            <input type="radio" name="Categoria" id="Categoria" required> Perua
+            <input type="radio" name="Categoria" id="Categoria" required> Minivan
+            <input type="radio" name="Categoria" id="Categoria" required> Conversível
+            <input type="radio" name="Categoria" id="Categoria" required>Outro
+            <input type="text" name="Categoria" id="Categoria" placeholder="Qual?">
+        </fieldset>
+        <fieldset>
+            <legend>Fabricante:</legend>
+            <input type="radio" name="Fabricante" id="Fabricante" required> Fiat
+            <input type="radio" name="Fabricante" id="Fabricante" required> Ford
+            <input type="radio" name="Fabricante" id="Fabricante" required> Chevrolet
+            <input type="radio" name="Fabricante" id="Fabricante" required> Volkswagen
+            <input type="radio" name="Fabricante" id="Fabricante" required> Citroën
+            <input type="radio" name="Fabricante" id="Fabricante" required> Renault
+            <input type="radio" name="Fabricante" id="Fabricante" required> Kia
+            <input type="radio" name="Fabricante" id="Fabricante" required> Outro
+            <input type="text" name="Fabricante" id="Fabricante" placeholder="Qual?"/>
+        </fieldset>
+        <fieldset>
+            <legend>Modelo do veículo:</legend>
+            <input type="number" name="modelo" id="modelo" min="0" max="2025" required>
+        </fieldset>
+        <fieldset>
+            <legend>Quilometragem:</legend>
+            <input type="number" name="Quilometragem" id="Quilo requiredmetragem" min="0" placeholder="Quilometragem:" required>
+        </fieldset>
+        <fieldset>
+            <legend>Preço:</legend>
+            <input type="number" name="Preco" id="Preco" placeholder="R$" required>
+        </fieldset>
+        <fieldset>
+            <legend>Placa</legend>
+            <input type="text" name="Placa" id="Placa"  maxlength="7" placeholder="AAA9999" required>
+        </fieldset>
+        <fieldset>
+            <legend>Câmbio:</legend>
+            <input type="radio" name="cambio" id="cambio" required> Manual
+            <input type="radio" name="cambio" id="cambio" required> Automático
+        </fieldset>
+        <fieldset>
+            <legend>Blindagem:</legend>
+            <input type="radio" name="Blindagem" id="Blindagem" required> sim
+            <input type="radio" name="Blindagem" id="Blindagem" required> não
+        </fieldset>
+        <fieldset>
+            <legend>Números de portas:</legend>
+            <input type="number" name="portas" id="portas" min="1" max="10" required> 
+        </fieldset>
+        <fieldset>
+            <legend>Tipo de combustível:</legend>
+            <input type="radio" name="combustivel" id="combustivel" required> Etanol
+            <input type="radio" name="combustivel" id="combustivel" required> Gasolina
+            <input type="radio" name="combustivel" id="combustivel" required> Diesel
+            <input type="radio" name="combustivel" id="combustivel" required> Flex
+            <input type="radio" name="combustivel" id="combustivel" required> Outro
+            <input type="text" name="combustivel" id="combustivel" placeholder="Qual?">  
+        </fieldset>
+        <fieldset>
+            <legend>Foto:</legend>
+            <input type="file" name="foto" id="foto"  accept=".jpg,.jpeg,.png">
+        </fieldset>
+        <fieldset>
+            <legend>Descrição:</legend>
+            <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        
